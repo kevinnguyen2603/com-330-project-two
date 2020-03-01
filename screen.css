@@ -1,0 +1,118 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit;}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+/* Begin site styles... */
+
+/* Using a Major Third modular scale:
+*  https://www.modularscale.com/?18&px&1.25
+*/
+
+/*Custom CSS*/
+
+
+html{
+	font-family: "Indie Flower",Helvetica, Arial,sans-serif;
+	font-size: 1.125em; /*16px = 1em (target (18px) / context (16px) = result)*/
+	padding: 1.22222222em 1.83333333em; /* 33px / 18px = 1.83333333em*/
+	background-color: #E6CEAE;
+}
+body{
+	line-height: 1.22222222em; /* 18px * 1.2 = 22*/ /* 22px / 18px = result*/
+}
+h1{
+	font-family: 'Zhi Mang Xing', sans-serif;
+	font-size: 1.9531111111em; /*35.156px /18px = 1.953em*/
+	line-height: 1.2515644556em; /* 44 / 35.156 = 1.2515644556 */
+	/* border-bottom: 0.3055555556em solid;/* 5.5px / 18px = 0.3055555556*/
+	color:#807261;
+}
+h1 b{
+	display:block;
+}
+h2{
+	font-size: 1.563em;
+}
+h1,h2{
+	font-weight: bold;
+	text-align: center;
+}
+h1, h2, p{
+	padding-bottom: 1.22222222em;
+}
+img{
+	display:block;
+	max-width: 100%;
+}
+
+.photo{
+	background: #333;
+	color: #EEE;
+	padding: 0.6111111111em; /* 11px / 18px = result*/
+	margin-bottom: 1.2222222222em; /* 22px / 18px = result*/
+}
+
+.photo figcaption{
+	padding-top: 0.6111111111em; /* 11px / 18px = result*/
+	left: -10000px;
+	position: absolute;
+}
+
+/* Show Gridlines... */
+
+/**
+* A quick baseline grid overlay using css+svg.
+* Inspired by [Basehold.it](https://basehold.it/).
+* https://gist.github.com/leshido/af24e64ab6627328bfcb7ae0e93a9684
+* @author leshido
+*/
+
+.g body {
+	position: relative;
+}
+
+.g body::after {
+	/* Change the `height` parameter here to match your base line-height. */
+	background: url('data:image/svg+xml;utf8,<svg height="22" width="1" xmlns="http://www.w3.org/2000/svg"><rect width="1" height="0.5" style="fill:rgba(160, 0, 0, 2.0)" /></svg>') repeat top left;
+
+	content: "";
+	display: block;
+	pointer-events: none;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 9999;
+	position: absolute;
+}
+
+.g body:active::after {
+	display: none;
+}
+/* .img-circle{
+margin-top: 1.22222222em;
+margin-bottom: 1.22222222em;
+padding: 1.22222222em;
+width: 20em;
+height: 20em;
+overflow: hidden;
+border-radius: 50%;
+
+}
+.box{
+position: relative;
+border-radius: 2em;
+background: #BFAB91;
+border: 1px solid;
+padding: 2em;
+line-height: 1.5em;
+margin-left: 15em;
+margin-right: 15em;
+}
+.box p{
+color:#807261;
+margin-left: 5em;
+margin-right: 5em;
+} */
