@@ -70,7 +70,7 @@ img{
 	background-color: white;
 }
 .box-text{
-	border-top: 5px solid white;
+	/* border-top: 5px solid white; */
 	padding:1em;
 }
 
@@ -101,18 +101,12 @@ img{
 
 /* State Styles */
 @media screen and (min-width: 540px) {
-
-
 	#page-cover{
 		font-size: 1.25em;
 	}
 }
 
 @media screen and (min-width: 1080px) {
-	html{
-
-	}
-
 	#page-cover{
 		font-size: 1.953em;
 	}
