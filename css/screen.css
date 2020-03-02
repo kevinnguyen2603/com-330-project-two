@@ -13,7 +13,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /*Base Styles*/
 html{
 	font-family: 'Roboto',Helvetica, Arial,sans-serif;
-	font-size: 1.125em; /*16px = 1em (target (18px) / context (16px) = result)*/
+	/* font-size: 1.125em; /*16px = 1em (target (18px) / context (16px) = result)*/
 	padding: 0;
 	/* 1.22222222em 1.83333333em; /* 33px / 18px = 1.83333333em*/
 	background-color: #E6CEAE;
@@ -39,111 +39,55 @@ h2{
 h1,h2{
 	text-align: center;
 }
-h1, h2, p{
-	padding-bottom: 1.22222222em;
-}
+
 img{
 	display: block;
-	width: 100%;
+	max-width: 100%;
 }
 
+
+/* Layout */
 .main-content{
 	display:grid;
-	font-size: 1.1em;
+	font-size: 1.125em;
 	grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
 	grid-template-rows: auto;
-	/* grid-template-areas: "About Me, Hobbies, Career"; */
-	grid-row-gap:1em;
-	grid-column-gap:1em;
-	padding: 5%;
+	grid-row-gap:2em;
+	grid-column-gap:2em;
+	padding-top: 4em;
 }
 
 .content-panel{
 	text-align: center;
 	display: flex;
 	flex-direction: column;
+	border: solid white;
 }
 
 .box-title{
-	font-size: 1.5em;
-	padding: 5%;
+	font-size: 1.125em;
+	padding:0.5em;
+	background-color: white;
 }
 .box-text{
-	border-top: solid;
-	border-color: red;
-	padding:5%;
+	border-top: 5px solid white;
+	padding:1em;
 }
 
-
-
-/*section{
-	border: 1.125em solid black;
-	display:flex;
-	flex-wrap: wrap;
-	justify-content: left;
-	overflow: auto;
-	padding: 1.125em;
-} */
-
-/*
-.grid{
-	display: grid;
-	grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-	gap: 24px;
-
-} */
-/*
-@media screen and (min-width: 480px){
-.float img{
-	float: left;
-	width:50%;
-}
-
-.float figcaption {
-	padding-left:52%;
-}
-}
- */
-
-/*.photo{
-	background: #333;
-	color: #EEE;
-  padding: 0.6111111111em; /* 11px / 18px = result*/
-	/* margin-bottom: 1.2222222222em; /* 22px / 18px = result
-}
-
-.photo figcaption{
-	padding-top: 0.6111111111em; /* 11px / 18px = result
-	color: red;
-	text-align: left;
-}
-*/
-
-/* Layout */
 #page-cover{
 	display: grid;
+	font-size: 0.8em;
 	background: #FFFFFF;
 	grid-template-columns: 1fr 2fr;
-	gap: 24px;
+	gap: 1em;
 	margin: 0;
 }
-#intro-header {
-	color: red;
+#intro-cover {
+	color: Black;
 	text-align: left;
 	margin: auto;
-	font-size: 0.8em;
+	font-size: 1em;
 	line-height: 1.2515644556em;
-}
-
-
-#about-me{
-	grid-area: main;
-	display:grid;
-	grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-	grid-template-rows: auto;
-	grid-column-gap: 1em;
-	grid-row-gap: 1em;
-	padding: 5%;
 }
 
 #footer{
@@ -154,21 +98,13 @@ img{
 	margin-top: 10vw;
 }
 
-/* Modular Styles */
-
-
-
-
-
 
 /* State Styles */
 @media screen and (min-width: 540px) {
-	html{
-		font-size: 1.25em; /*20/16 =1.25*/
-	}
+
 
 	#page-cover{
-		font-size: 1.563em;
+		font-size: 1.25em;
 	}
 }
 
