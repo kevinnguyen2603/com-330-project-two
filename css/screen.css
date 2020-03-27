@@ -151,12 +151,51 @@ p{
   .photo{
     width: 70%;
   }
+  #introduction h2{
+    /* text-align: center; */
+    flex: 1 100%;
+    margin-bottom: 0.6111111111em;
+  }
+  #covid-19{
+    grid-column-start:1;
+    grid-column-end: 4;
+    grid-row-start:2;
+  }
+  #hobbies{
+    grid-column-start:1;
+    grid-column-end: 4;
+    grid-row-start:3;
+  }
+  #career {
+    grid-column-start:1;
+    grid-column-end: 4;
+    grid-row-start:4;
+  }
 }
 
 /* State Styles */
 @media screen and (min-width: 540px) {
   .photo{
     width: 80%;
+  }
+  #introduction h2{
+    flex: 1 100%;
+    margin-bottom: 0.6111111111em;
+  }
+  #covid-19{
+    grid-column-start:1;
+    grid-column-end: 4;
+    grid-row-start:2;
+  }
+  #hobbies{
+    grid-column-start:1;
+    grid-column-end: 4;
+    grid-row-start:3;
+  }
+  #career {
+    grid-column-start:1;
+    grid-column-end: 4;
+    grid-row-start:4;
   }
 }
 
@@ -172,6 +211,21 @@ p{
   #introduction h2{
     flex: 1 100%;
     margin-bottom: 0.6111111111em;
+  }
+  #covid-19{
+    grid-column-start:1;
+    grid-column-end: 1;
+    grid-row-start:2;
+  }
+  #hobbies{
+    grid-column-start:2;
+    grid-column-end: 2;
+    grid-row-start:2;
+  }
+  #career {
+    grid-column-start:3;
+    grid-column-end: 3;
+    grid-row-start:2;
   }
 
 }
