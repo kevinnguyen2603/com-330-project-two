@@ -91,34 +91,55 @@ p{
 
 }
 
-#about-me{
-  padding: 0.6111111111em;
+.heading{
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 1;
 }
 
-#content{
+#about-me{
   display:grid;
   font-size: 1.125em;
-  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  /* grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); */
+  grid-template-columns: repeat(3,1fr)
   grid-template-rows: auto;
-  grid-template-areas: "covid-19", "hoobies", "career";
+  /* grid-template-areas: "heading heading heading heading heading","covid-19", "hoobies", "career"; */
   grid-row-gap:2em;
   grid-column-gap:2em;
   line-height: 1.2515644556em;
   margin-top: 1.2222222222em;
+  padding: 0.6111111111em;
 }
-#content h3{
+#about-me h3{
   font-weight: bold;
   margin-bottom: 0.6111111111em;
   border-bottom: 0.1527777778em solid #E6CEAE;
   border-width: thin;
   border-radius: 10px;
+  display: block;
 }
 #covid-19, #hobbies, #career {
   background: #444;
   color: #eee;
   padding: 0.6111111111em;
-}
 
+
+}
+#covid-19{
+  grid-column-start:1;
+  /* grid-column-end: 3; */
+  grid-row-start:2;
+}
+#hobbies{
+  grid-column-start:2;
+  /* grid-column-end: 3; */
+  grid-row-start:2;
+}
+#career {
+  grid-column-start:3;
+  /* grid-column-end: 3; */
+  grid-row-start:2;
+}
 #footer{
   background: #FFFFFF;
   padding: 50px 0;
@@ -147,6 +168,10 @@ p{
   #introduction article{
     flex: 1 0 50%;
     min-width: 50%;
+  }
+  #introduction h2{
+    flex: 1 100%;
+    margin-bottom: 0.6111111111em;
   }
 
 }
